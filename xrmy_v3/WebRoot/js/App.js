@@ -11,7 +11,7 @@
                     templateUrl: function($stateParams){
                         var spaceName = $stateParams.spaceName;
                         var urlMap = {
-                            home:'page0.html',
+                            home:'index_right.html',
                             about:'about_us.html',
                             company:'honer.html',
                             news:'news_center.html',

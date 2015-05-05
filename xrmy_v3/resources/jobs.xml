@@ -5,7 +5,7 @@
 	<job>
 		<jobid>1</jobid>
 		<name>AutoSendMailJob</name>
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<cron>0/60 * * * * ?</cron>
 		<timeout>600</timeout>
 		<concurrency>2</concurrency>
