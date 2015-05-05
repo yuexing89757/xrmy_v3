@@ -14,6 +14,7 @@
 		<display-name>StartUp Servlet</display-name>
 		<servlet-name>StartUpServlet</servlet-name>
 		<servlet-class>com.zzy.servlet.StartupServlet</servlet-class>
+	
 		<load-on-startup>1</load-on-startup>
 	</servlet>
   
@@ -22,12 +23,17 @@
 		<display-name>WebAPI Servlet</display-name>
 		<servlet-name>WebApiServlet</servlet-name>
 		<servlet-class>com.zzy.servlet.ApiServlet</servlet-class>
-	
+		<init-param>
+			<description>url pattern prefix</description>
+			<param-name>path</param-name>
+			<param-value>/api</param-value>
+		</init-param>
 		<init-param>
 			<description>webapi class path</description>
 			<param-name>classpath</param-name>
-			<param-value>com.zzy.test</param-value>
+			<param-value>com.zzy.webapi</param-value>
 		</init-param>
+		
 		<load-on-startup>2</load-on-startup>
 	</servlet>
 	
