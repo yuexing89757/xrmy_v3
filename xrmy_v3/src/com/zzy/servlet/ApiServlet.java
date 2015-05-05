@@ -107,7 +107,7 @@ public class ApiServlet extends HttpServlet implements Servlet {
 				}
 				
 				ApiRequest apiRequest =ApiRequest.getInstance(apiDataType, apiMethod.getPath(), decodeHttpRequestPayload(request));
-				filterInstance.doPrefix(apiRequest.getAdvertiserId(), null);
+				//filterInstance.doPrefix(apiRequest.getAdvertiserId(), null);
 				IAuthScope<ApiUser, ApiRequest> scope = null;
 				String paramKey = "";
 				try {
