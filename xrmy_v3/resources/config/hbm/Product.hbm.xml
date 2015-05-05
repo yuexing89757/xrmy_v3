@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.zzy.model">
+	
+	<class name="Product" table="product">
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="native"/>
+		 </id> 
+		 
+		<property name="name">
+		    <column name="NAME" />
+		</property>
+		
+		<property name="price">
+		    <column name="PRICE" />
+		</property>
+		
+		<property name="photo">
+		    <column name="PHOTO" />
+		</property>
+		
+		
+		<property name="describtion">
+		    <column name="DESCRIBTION" />
+		</property>
+
+		<property name="productType">
+		    <column name="PRODUCT_TYPE" />
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.zzy.enums.ProductType</param>
+				<param name="type">12</param>
+			</type>
+		</property>
+		
+		<property name="videoTitle">
+		    <column name="VIEDO_TITLE" />
+		</property>
+		
+		<property name="videoURL">
+		    <column name="VIEDO_URL" />
+		</property>
+		
+		<property name="videoPhoto">
+		    <column name="VIEDO_PHOTO" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

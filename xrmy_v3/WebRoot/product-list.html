@@ -1,0 +1,45 @@
+<!-- <div class="main_right product-wrap" style="width:100%">
+
+        <div class="view-list-box">
+            <ul class="bd bdv-tabslider-list clearfix"> 
+                <li ng-repeat="video in videoData">
+                    <div class="item no-0 lastEdge" alog-alias="m_todayHot_1_0">
+                        <div class="video">
+                            <a title="{{video.videoTitle}}" ui-sref="space.prd({id:video.id})">
+                                <img class="" width="200" height="150" ng-src="{{video.videoPhoto}}" alt="{{video.videoTitle}}">
+                                <span class="gradient-bg">&nbsp;</span>
+                                <span class="play-video-icon">&nbsp;</span>
+                                <span class="vid-info play-count"><i class="play-icon">{{video.count}}</i></span>
+                            </a>
+                        </div>
+                        <div class="item-title" style="text-align: center;width: 100%;line-height: 31px;font-weight: bold;">
+                            <a title="{{video.name}}" target="_blank" class="viedio-title">{{video.name}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+</div> -->
+<!--左侧-->
+    <div class="sidebar fleft">
+        <div class="title">快捷导航</div>
+        <ul class="menu news-nav">
+            <li><a ui-sref="space.link({link:'video'})" ng-class="{'active':link=='video'}">精品推荐</a> </li>
+            <li><a ui-sref="space.link({link:'advance'})" ng-class="{'active':link=='advance'}">新品预告</a> </li>
+        </ul>
+        <div class="title mt10">联系我们 Contact</div>
+        <div class="contact_nr">
+            <p><b class="f15">河南新荣牧业有限公司</b></p>
+            <p>手机：13703937385</p>
+            <p>固话：0371-62522199</p>
+            <p>地址：河南省郑州市新郑市辛店镇 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   辛店村</p>
+            <p>网址：www.xinrongmuye.cn</p>
+        </div>                
+    </div>
+
+    <!--右侧-->
+    <div class="main_right fright" ui-view="homeMain">
+
+    </div>
+
+    

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<jobs>
+
+	<job>
+		<jobid>1</jobid>
+		<name>AutoSendMailJob</name>
+		<enabled>true</enabled>
+		<cron>0/60 * * * * ?</cron>
+		<timeout>600</timeout>
+		<concurrency>2</concurrency>
+		<params></params>
+		<class>com.zzy.job.AutoSendMailJob</class>
+	</job>
+
+</jobs>

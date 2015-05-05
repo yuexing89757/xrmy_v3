@@ -1,0 +1,14 @@
+
+<!--右侧-->
+<div class="main_right fright">
+	<!-- <div class="title clearfix">
+		<font class="yh f16">公司新闻</font>
+		<span class="fright f12">网站首页 > <a href="#">新闻中心</a></span>
+	</div> -->
+	<ul class="text_list">
+    <li ng-repeat="item in list">> <span>{{item.createTime}}</span><a ui-sref="space.news({idx:item.id})">{{item.title}} </a></li>
+  </ul>
+    <!-- <div class="page clearfix">页次：1/1 每页9 总数5    首页  上一页  下一页  尾页    转到:<select name=select onchange="self.location.href=this.options[this.selectedIndex].value"><option value='/news/index.html' selected>第 1 页</option></select></div> -->
+    
+</div>
+

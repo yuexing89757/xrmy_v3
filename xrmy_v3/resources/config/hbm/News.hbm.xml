@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.zzy.model">
+	
+	<class name="News" table="news">
+	
+		<id name="id" type="java.lang.Long">
+			<column name="id" />
+			<generator class="native"/>
+		 </id> 
+		
+		
+		<property name="title">
+		    <column name="title" />
+		</property> 
+		
+		<property name="content">
+		    <column name="content" />
+		</property> 
+		
+		<property name="createTime">
+		    <column name="create_time" />
+		</property> 
+		
+		<property name="newsFrom">
+		    <column name="news_from" />
+		</property> 
+		
+
+		<property name="newsType">
+		    <column name="news_type" />
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.zzy.enums.NewsType</param>
+				<param name="type">12</param>
+			</type>
+			
+		</property>
+		
+		
+		
+	
+	</class>
+</hibernate-mapping>

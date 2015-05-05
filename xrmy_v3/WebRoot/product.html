@@ -1,0 +1,26 @@
+<div class="main_right product-wrap" style="width:100%">
+
+        <div class="view-list-box">
+            <ul class="bd bdv-tabslider-list clearfix"> 
+                <li ng-repeat="video in videoData">
+                    <div class="item no-0 lastEdge" alog-alias="m_todayHot_1_0">
+                        <div class="video">
+                            <a title="{{video.videoTitle}}" ui-sref="space.prd({id:video.id})">
+                                <img class="" width="200" height="150" ng-src="{{video.videoPhoto}}" alt="{{video.videoTitle}}">
+                                <span class="gradient-bg">&nbsp;</span>
+                                <span class="play-video-icon">&nbsp;</span>
+                                <span class="vid-info play-count"><i class="play-icon">{{video.count}}</i></span>
+                            </a>
+                        </div>
+                        <div class="item-title" style="text-align: center;width: 100%;line-height: 31px;font-weight: bold;">
+                            <a title="{{video.name}}" target="_blank" class="viedio-title">{{video.name}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+</div>
+
+
+
+    

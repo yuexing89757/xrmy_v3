@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>河南新荣牧业有限公司</title>
+<meta name="description" content="[!--pagedes--]" />
+<meta name="keywords" content="[!--pagekey--]" />
+<link href="css/master.css" type="text/css" rel="stylesheet" />
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<link href="css/product.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+
+   <script src="js/angular.js"></script>
+
+    <script src="js/angular-ui-router.js"></script>
+
+    <script src="js/App.js"></script>
+    
+
+</head>
+
+
+<body ng-app="myApp">
+<body>
+<div class="head clearfix yh">
+
+	<!--logo-->
+    <div class="logo block clearfix">
+    	<a href="/" class="fleft"><img src="images/logo.png"></a>
+        <div class="fright">
+        	<p class="tright"><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></p>
+            <br>
+            <p class="f18 call-num"><span class="small-txt">咨询电话：</span> <span class="c_red f18">13703937385</span></p>
+        </div>
+    </div>
+    
+     <!--nav-->
+	<div class="nav clearfix">
+    	<ul class="block">
+        	<li><a ui-sref="space({spaceName:'home'})" ng-class="{'active':activeTab=='home'}" id="webHomeNav">网站首页</a></li>
+            <li><a ui-sref="space({spaceName:'about'})"  ng-class="{'active':activeTab=='about'}" class="L">关于我们</a></li>
+            <li><a ui-sref="space({spaceName:'company'})"  ng-class="{'active':activeTab=='company'}" class="L">公司资质</a></li>
+            <li><a href="#product/video" ng-class="{'active':activeTab=='product'}" class="L">全部产品</a></li>
+            <li><a href="#news/advance"  ng-class="{'active':activeTab=='news'}" class="L">新闻中心</a></li>
+            <li><a ui-sref="space({spaceName:'call'})"  ng-class="{'active':activeTab=='call'}" class="L">联系我们</a></li>
+        </ul>
+    </div>
+    
+    
+
+    <!--图片展示-->
+   <div class="focusBox">
+			<ul class="pic">
+					<li><a href="#" target="_blank"><img src="images/hd.png"/></a></li>
+			</ul>
+	</div>
+</div>  
+ <!-- content -->
+
+<div class="main clearfix ofHidden block yh" ui-view>
+</div>
+  
+
+<div class="foot tcenter yh f13">
+	<p>联系人：赵女士 13703937385</p>
+	<p>Copyright © 2015 www.xinrongmuye.com, All Rights Reserved 豫ICP备15006520号</p>
+</div>
+<script src="js/all.js"></script>
+</body>
+</html>
